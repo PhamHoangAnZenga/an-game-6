@@ -49,7 +49,7 @@ public class CustomLeanRotate : MonoBehaviour
         {
             float xSwipe = finger.SwipeScaledDelta.x;
             float ySwipe = finger.SwipeScaledDelta.y;
-            Debug.Log(finger.SwipeScaledDelta * _rotateSpeed);
+            // Debug.Log(finger.SwipeScaledDelta * _rotateSpeed);
 
             if (Mathf.Abs(xSwipe) > Mathf.Abs(ySwipe))
             {

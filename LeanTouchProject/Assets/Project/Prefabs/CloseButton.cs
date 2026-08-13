@@ -4,7 +4,7 @@ public class CloseButton : MonoBehaviour
 {
     [SerializeField] GameObject _target;
 
-    public void OpenGuide()
+    public void Close()
     {
         _target.SetActive(false);
     }

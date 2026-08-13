@@ -124,6 +124,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7349816115461501089, guid: a4f54b434882e44c9983420928c53221, type: 3}
   m_PrefabInstance: {fileID: 5454318832168213698}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &21697670 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -7304539130927029934, guid: a4f54b434882e44c9983420928c53221, type: 3}
+  m_PrefabInstance: {fileID: 5454318832168213698}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caffe3d87e90d4ef59073139a1bf4528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GuideButton
 --- !u!1001 &114345438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1236,6 +1247,34 @@ PrefabInstance:
       propertyPath: _guide
       value: 
       objectReference: {fileID: 1535661267}
+    - target: {fileID: 6167712483766271660, guid: a4f54b434882e44c9983420928c53221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6167712483766271660, guid: a4f54b434882e44c9983420928c53221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6167712483766271660, guid: a4f54b434882e44c9983420928c53221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 21697670}
+    - target: {fileID: 6167712483766271660, guid: a4f54b434882e44c9983420928c53221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6167712483766271660, guid: a4f54b434882e44c9983420928c53221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenGuide
+      objectReference: {fileID: 0}
+    - target: {fileID: 6167712483766271660, guid: a4f54b434882e44c9983420928c53221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GuideButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6167712483766271660, guid: a4f54b434882e44c9983420928c53221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7349816115461501089, guid: a4f54b434882e44c9983420928c53221, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
