@@ -220,6 +220,17 @@ Transform:
   - {fileID: 1632241670}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &280541714 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7218922941051063027, guid: b458a8b0de45e4d6ab51d51c4bed9b88, type: 3}
+  m_PrefabInstance: {fileID: 1580143339}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8421bf832a0d4ae898e8f059d604a42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CustomLeanSelectableDrag
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,6 +368,17 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &384767544 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7218922941051063027, guid: b458a8b0de45e4d6ab51d51c4bed9b88, type: 3}
+  m_PrefabInstance: {fileID: 114345438}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8421bf832a0d4ae898e8f059d604a42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CustomLeanSelectableDrag
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,6 +805,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 174024986}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1314301290 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7218922941051063027, guid: b458a8b0de45e4d6ab51d51c4bed9b88, type: 3}
+  m_PrefabInstance: {fileID: 6741997263739905918}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8421bf832a0d4ae898e8f059d604a42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CustomLeanSelectableDrag
 --- !u!1 &1535661267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,9 +1155,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4219145137120917553, guid: 4d83915168776462fa867e478cec8d3d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4219145137120917553, guid: 4d83915168776462fa867e478cec8d3d, type: 3}
+      propertyPath: _selectable.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4219145137120917553, guid: 4d83915168776462fa867e478cec8d3d, type: 3}
+      propertyPath: '_selectable.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1314301290}
+    - target: {fileID: -4219145137120917553, guid: 4d83915168776462fa867e478cec8d3d, type: 3}
+      propertyPath: '_selectable.Array.data[1]'
+      value: 
+      objectReference: {fileID: 280541714}
+    - target: {fileID: -4219145137120917553, guid: 4d83915168776462fa867e478cec8d3d, type: 3}
+      propertyPath: '_selectable.Array.data[2]'
+      value: 
+      objectReference: {fileID: 384767544}
     - target: {fileID: 65719016743942692, guid: 4d83915168776462fa867e478cec8d3d, type: 3}
       propertyPath: m_Name
-      value: LeanSystems
+      value: LeanSystem
       objectReference: {fileID: 0}
     - target: {fileID: 9019783353376373716, guid: 4d83915168776462fa867e478cec8d3d, type: 3}
       propertyPath: m_LocalPosition.x

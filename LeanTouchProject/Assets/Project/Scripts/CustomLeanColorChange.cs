@@ -29,6 +29,7 @@ public class CustomLeanColorChange : MonoBehaviour
 
     void OnSelected(LeanSelect select)
     {
+        Debug.Log("select" + name);
         SetColor(_activeColor);
     }
 

@@ -1,8 +1,11 @@
 using Lean.Common;
 using Lean.Touch;
+using UnityEngine;
 
 public class CustomLeanSelectableDrag : LeanSelectable
 {
+    [SerializeField]LeanSelectable _selectable;
+
     protected override void OnEnable()
     {
         base.OnEnable();
@@ -21,6 +24,7 @@ public class CustomLeanSelectableDrag : LeanSelectable
     
     public void Active(LeanFinger finger)
     {
+        if (!_selectable.IsSelected) return;
         SelfSelected = true;
     }
     
