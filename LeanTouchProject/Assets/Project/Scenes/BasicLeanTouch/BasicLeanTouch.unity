@@ -153,7 +153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5360882819253388320, guid: b458a8b0de45e4d6ab51d51c4bed9b88, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: -1.62
       objectReference: {fileID: 0}
     - target: {fileID: 5360882819253388320, guid: b458a8b0de45e4d6ab51d51c4bed9b88, type: 3}
       propertyPath: m_LocalPosition.y
@@ -574,16 +574,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '@ Tap Object = Select / Deselect
-
-    @ Swipe = Rotate
-
-    @ Press +
-    Drag = Translate
-
-    @ Pinch / Ctrl + Drag = Scale
-
-'
+  m_text: "@ B\u1EA5m v\xE0o cube \u0111\u1EC3 ch\u1ECDn / b\u1ECF\n@ Nh\u1EA5n gi\u1EEF
+    (v\u1ECB tr\xED b\u1EA5t k\xEC) \u0111\u1EC3 di chuy\u1EC3n\n@ Vu\u1ED1t nhanh
+    \u0111\u1EC3 xoay, ch\u1EA1m \u0111\u1EC3 d\u1EEBng xoay"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -610,8 +603,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -916,9 +909,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2172519899627063530, guid: b458a8b0de45e4d6ab51d51c4bed9b88, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5360882819253388320, guid: b458a8b0de45e4d6ab51d51c4bed9b88, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 5360882819253388320, guid: b458a8b0de45e4d6ab51d51c4bed9b88, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1190,6 +1187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeanSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 65719016743942692, guid: 4d83915168776462fa867e478cec8d3d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9019783353376373716, guid: 4d83915168776462fa867e478cec8d3d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
@@ -1387,6 +1388,10 @@ PrefabInstance:
     - target: {fileID: 2172519899627063530, guid: b458a8b0de45e4d6ab51d51c4bed9b88, type: 3}
       propertyPath: m_Name
       value: Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 2172519899627063530, guid: b458a8b0de45e4d6ab51d51c4bed9b88, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5360882819253388320, guid: b458a8b0de45e4d6ab51d51c4bed9b88, type: 3}
       propertyPath: m_LocalPosition.x
