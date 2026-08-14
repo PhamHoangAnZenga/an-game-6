@@ -32,20 +32,20 @@ public class GameController : MonoBehaviour
     }
 
     void Update()
-    {
+    {        
         if (_isPressed)
         {
             Vector2 inputPosition = Vector2.zero;
 
-            #if UNITY_ANDROID || UNITY_IOS
-            if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed)
-            {
-                inputPosition = Touchscreen.current.primaryTouch.position.ReadValue();
-            }
-            #else
-            if (Mouse.current != null && Mouse.current.leftButton.isPressed)
+            #if UNITY_EDITOR 
+            if (Mouse.current != null)
             {
                 inputPosition = Mouse.current.position.ReadValue();
+            }
+            #else
+            if (Touchscreen.current != null)
+            {
+                inputPosition = Touchscreen.current.primaryTouch.position.ReadValue();
             }
             #endif
             
