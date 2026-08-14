@@ -44,7 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e195afdb76a04f94851a14b6f64c5f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameController
-  _centerPrefab: {fileID: -5448629327180169471, guid: 6dff1526570754288bf8894faba7e832, type: 3}
-  _centerSize: 3.6
+  _spawnRadius: 0.8
   _dirtPrefab: {fileID: 450404496791037776, guid: ae973cad4431449b7b60f5d4e63450ef, type: 3}
-  _dirtSpawnNumber: 10
+  _dirtSpawnNumber: 20

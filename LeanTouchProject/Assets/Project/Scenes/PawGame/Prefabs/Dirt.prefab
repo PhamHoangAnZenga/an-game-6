@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 944759635535024789}
   - component: {fileID: 2925012616554038310}
   - component: {fileID: 450404496791037776}
+  - component: {fileID: 556069365817238321}
   m_Layer: 0
   m_Name: Dirt
   m_TagString: Untagged
@@ -125,4 +126,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13eadad33f94d440c8e5ed322496a9c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dirt
-  _selectable: {fileID: 0}
+  _selectable: {fileID: 556069365817238321}
+--- !u!114 &556069365817238321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4793768648341128495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83dcd8dace8b7fe449d796b980cb121d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanTouch::Lean.Touch.LeanSelectableByFinger
+  selfSelected: 0
+  onSelected:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeselected:
+    m_PersistentCalls:
+      m_Calls: []
+  use: 0
+  onSelectedFinger:
+    m_PersistentCalls:
+      m_Calls: []
+  onSelectedFingerUp:
+    m_PersistentCalls:
+      m_Calls: []
+  onSelectedSelectFinger:
+    m_PersistentCalls:
+      m_Calls: []
+  onSelectedSelectFingerUp:
+    m_PersistentCalls:
+      m_Calls: []

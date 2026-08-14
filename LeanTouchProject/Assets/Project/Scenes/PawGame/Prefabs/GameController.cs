@@ -2,21 +2,18 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    [SerializeField] Center _centerPrefab;
-    [SerializeField] float _centerSize;
+    [SerializeField] float _spawnRadius;
 
     [SerializeField] Dirt _dirtPrefab;
     [SerializeField] int _dirtSpawnNumber;
 
     void Start()
     {
-        Center center = Instantiate(_centerPrefab);
-        center.transform.localScale *= _centerSize;
 
         for (int i = 0; i < _dirtSpawnNumber; ++i)
         {
-            Vector3 position = Random.onUnitSphere * _centerSize / 2;
-            Instantiate(_dirtPrefab, position, Quaternion.identity);
+            Vector2 position = Random.onUnitCircle * Random.Range(0, _spawnRadius);
+            Instantiate(_dirtPrefab, new Vector3(position.x, 0.1f, position.y), Quaternion.identity);
         }                        
     }
 }
