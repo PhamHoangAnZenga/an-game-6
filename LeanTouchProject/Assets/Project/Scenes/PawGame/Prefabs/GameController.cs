@@ -37,17 +37,17 @@ public class GameController : MonoBehaviour
         {
             Vector2 inputPosition = Vector2.zero;
 
-            #if UNITY_EDITOR 
-            if (Mouse.current != null)
-            {
-                inputPosition = Mouse.current.position.ReadValue();
-            }
-            #else
+            // #if UNITY_EDITOR 
+            // if (Mouse.current != null)
+            // {
+            //     inputPosition = Mouse.current.position.ReadValue();
+            // }
+            // #else
             if (Touchscreen.current != null)
             {
                 inputPosition = Touchscreen.current.primaryTouch.position.ReadValue();
             }
-            #endif
+            // #endif
             
             Ray ray = _camera.ScreenPointToRay(inputPosition);
             if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, _dirtMask))
