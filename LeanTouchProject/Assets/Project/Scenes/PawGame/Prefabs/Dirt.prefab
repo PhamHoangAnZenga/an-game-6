@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2925012616554038310}
   - component: {fileID: 450404496791037776}
   - component: {fileID: 556069365817238321}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13eadad33f94d440c8e5ed322496a9c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dirt
+  _renderer: {fileID: 944759635535024789}
   _selectable: {fileID: 556069365817238321}
+  _durability: 1.5
 --- !u!114 &556069365817238321
 MonoBehaviour:
   m_ObjectHideFlags: 0
