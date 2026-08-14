@@ -35,7 +35,21 @@ public class GameController : MonoBehaviour
     {
         if (_isPressed)
         {
-            Ray ray = _camera.ScreenPointToRay(Mouse.current.position.ReadValue());
+            Vector2 inputPosition = Vector2.zero;
+
+            #if UNITY_ANDROID || UNITY_IOS
+            if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed)
+            {
+                inputPosition = Touchscreen.current.primaryTouch.position.ReadValue();
+            }
+            #else
+            if (Mouse.current != null && Mouse.current.leftButton.isPressed)
+            {
+                inputPosition = Mouse.current.position.ReadValue();
+            }
+            #endif
+            
+            Ray ray = _camera.ScreenPointToRay(inputPosition);
             if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, _dirtMask))
             {
                 Dirt dirt = hit.collider.gameObject.GetComponent<Dirt>();
